@@ -76,7 +76,7 @@ a {
 .about-me {
 
     background-image: url(../img/bckg6.jpg);
-    background-color: rgba(188, 221, 243, 0.999);
+    background-color: var(--accent-bckg);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
