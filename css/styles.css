@@ -11,13 +11,12 @@
     --accent-color: #9ca1b5;
     --accent-text: #5c5e5f;
     --accent-bckg: #7c98b0;
-
 }
 
 /* Общие стили для всех страниц */
 
 body {
-    font-family: 'Monserat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p,
@@ -69,34 +68,20 @@ a {
     }
 }
 
-
 .header,
 .footer {
     background-color: var(--bckg-color);
-}
-
-.about-me {
-
-    background-image: url(../img/5026563.jpg);
-    background-color: var(--accent-bckg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
 }
 
 .header-data {
     display: flex;
 }
 
-
-
 @media screen and (min-width: 1200px) {
     .header-data {
         flex-direction: row-reverse;
     }
 }
-
-
 
 .photo-thumb {
     height: 100px;
@@ -112,7 +97,6 @@ a {
         width: 200px;
         border-radius: 50%;
         margin: auto;
-
     }
 }
 
@@ -123,7 +107,6 @@ a {
         width: 300px;
         border-radius: 50%;
         margin: auto;
-
     }
 }
 
@@ -135,17 +118,28 @@ a {
     box-shadow: 0px 0px 15px 10px var(--accent-color);
 }
 
-.test {
-    width: calc((100% - 30px)/2);
-    margin-right: 15px;
-    margin-left: 15%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.summary-block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.summary-text {
+    text-shadow: 0px 1px 15px var(--accent-bckg);
+    font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
-    .test {
-        margin-left: auto;
+    .summary-text {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .summary-text {
+        text-align: start;
+        font-size: 14px;
+        text-shadow: none;
     }
 }
 
@@ -167,6 +161,7 @@ a {
 }
 
 .my-name {
+    font-family: Raleway;
     font-weight: 700;
     font-size: 25px;
     font-style: normal;
@@ -210,6 +205,23 @@ a {
     }
 }
 
+.main-data {
+    background-image: url(../img/5026563.jpg);
+    background-color: var(--accent-bckg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.about-me {
+    display: flex;
+}
+
+.data-details {
+    width: calc((100% - 10px)/2);
+    margin-left: 5px;
+}
+
 .data {
     font-size: 12px;
     text-align: center;
@@ -250,20 +262,8 @@ a {
 
 }
 
-
-
 .title-data {
     text-transform: uppercase;
-}
-
-.title-contacts {
-    text-align: end;
-}
-
-@media screen and (min-width: 1200px) {
-    .title-contacts {
-        text-align: start;
-    }
 }
 
 
@@ -302,15 +302,17 @@ a {
     }
 }
 
-
-@media screen and (min-width: 1200px) {
-    .my-details {
-        margin-top: 10px;
-        font-size: 14px;
-        text-align: start;
-    }
+.my-details {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: start;
 }
 
+@media screen and (min-width: 768px) {
+    .my-details {
+        font-size: 14px;
+    }
+}
 
 .contact-link {
     line-height: 1.14;
@@ -329,6 +331,7 @@ a {
     margin-right: 3px;
     margin-top: -2px;
     fill: inherit;
+    fill: var(--bckg-color-accent);
 }
 
 .main-details {
@@ -357,26 +360,6 @@ a {
     }
 }
 
-.summary-text {
-    text-shadow: 0px 1px 15px var(--accent-bckg);
-    font-size: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    .summary-text {
-        text-align: center;
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .summary-text {
-        text-align: start;
-        font-size: 14px;
-        text-shadow: none;
-    }
-}
-
 .projects-name {
     text-align: start;
 }
@@ -400,8 +383,6 @@ a {
     .list-projects {
         line-height: 1.71;
         font-size: 18px;
-
-
     }
 }
 
@@ -412,14 +393,11 @@ a {
 @media screen and (min-width: 1200px) {
     .project-link-list {
         font-weight: bold;
-
-
     }
 }
 
 @media screen and (min-width: 1200px) {
     .project-link-list:not(:first-child) {
-
         margin-top: 10px;
 
     }
@@ -438,8 +416,6 @@ a {
         letter-spacing: 0.02em;
         font-style: italic;
         font-weight: normal;
-
-
     }
 }
 
@@ -483,12 +459,27 @@ a {
     content: "\1F517";
     margin-right: 10px;
 
+
 }
+
+.data-name,
+.courses-item {
+    margin-top: 10px;
+
+}
+
 
 
 .my-skills {
     display: flex;
     justify-content: space-evenly;
+}
+
+.skills-item {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: var(--accent-text);
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -498,57 +489,29 @@ a {
     }
 }
 
-.tech-skills-box {
+.skills-box {
     display: flex;
     margin-left: 5px;
 }
 
 .tech-list-two,
-.tech-list-one {
+.tech-list-one,
+.soft-list-one,
+.soft-list-two {
     width: calc((100% - 30px)/2);
     margin-left: 15px;
 }
 
-/* @media screen and (min-width: 1200px) {
-    .tech-skills-box {
-        display: block;
-        margin-left: 5px;
-    }
-} */
-
-/* @media screen and (min-width: 1200px) {
-
-    .tech-list-two,
-    .tech-list-one {
-        width: calc((100%-5px)/2);
-        margin-left: 5px;
-
-    }
-} */
-
-
-.tech-skills,
-.soft-skills {
-    width: calc((100% - 10px)/2);
-    margin-left: 5px;
-}
-
 .descriptions {
     font-size: 12px;
-
-
 }
 
 @media screen and (min-width: 768px) {
     .descriptions {
         font-size: 16px;
-
-
         font-weight: 400;
         line-height: 1.21;
-
         letter-spacing: 0.02em;
-
     }
 }
 
@@ -585,6 +548,7 @@ a {
     .lang-item::before {
 
         content: "\270E";
+        color: var(--accent-text);
 
 
     }

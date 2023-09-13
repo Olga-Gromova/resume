@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png"/>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon-32x32.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Raleway:wght@200;800&family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,274 +19,333 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    
-    <title>Resume</title>
+    <title>CV Olga Gromova</title>
   </head>
   <body>
-
-    <!-- HEADER: NAME, CONTACTS, PHOTO -->
-    
+    <!-- HEADER: NAME, PHOTO, SUMMARY -->
     <header class="header">
       <div class="container header-data">
-        <div class="my-data">
-          <h1 class="my-name">Olga Gromova</h1>
-          <h3 class="my-title">Frond-End Developer</h3>
-          <h3 class="data title-data">Contacts</h3>
-          <ul class="contacts-details">
-            <li class="my-details">
-              <a class="contact-link" href="tel:+380973839192">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-                +380 97 383 91 92</a
-              >
-            </li>
-            <li class="my-details">
-              <a class="contact-link" href="mailto:gromova.olga.it@gmail.com">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-                gromova.olga.it@gmail.com
-              </a>
-            </li>
-            <li class="my-details">
-              <a class="contact-link" href="viber://chat?number=+380973839192">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-viber-svgrepo-com"></use>
-                </svg>
-                Olga_NL (Viber)
-              </a>
-            </li>
-            <li class="my-details">
-              <a class="contact-link" href="http://www.linkedin.com/in/olga-gromova-0ba957290">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-iconmonstr-linkedin-1"></use>
-                </svg>
-                www.linkedin.com/in/olga-gromova-0ba957290
-              </a>
-            </li>
-              <li class="my-details">
-              <a class="contact-link" href="https://github.com/Olga-Gromova">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-iconmonstr-github-1"></use>
-                </svg>
-                https://github.com/Olga-Gromova
-              </a>
-          </ul>
+        <div class="summary-block">
+          <div class="summary">
+            <p class="main-details summary-text">
+              I am - talented and actived Junior Frontend Developer with a
+              plethora basic skills. I am graduated of Go-IT school as Full
+              Stack developer.
+            </p>
+            <p class="main-details summary-text">
+              I will happy to start my career in a comnpany with a focus on
+              making web-sites developments easily accessible, completely
+              responsive, and intuitive forusers. I dream that my projects bring
+              joy and convenience to users.
+            </p>
+          </div>
+          <div class="my-data">
+            <h1 class="my-name">Olga Gromova</h1>
+            <h3 class="my-title">Frond-End Developer</h3>
+          </div>
         </div>
         <div class="photo-block">
-        <div class="photo-thumb">
-          <picture class="photo-thumb">
-            <source
-              srcset="
-              ./img/my_photo.jpg 1x, 
-              ./img/my_photo_2.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-              ./img/my_photo_tab.jpg 1x, 
-              ./img/my_photo_tab_2.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-              ./img/my_photo_mob.jpg 1x, 
-              ./img/my_photo_mob_2.jpg 2x
-              "
-              media="(min-width: 320px)"
-            />
-            <img 
-            class="my_photo" 
-            src="./img/my_photo.jpg"
-            alt="My photo" 
-            width="300"
-            height="300"/>
-          </picture>
+          <div class="photo-thumb">
+            <picture class="photo-thumb">
+              <source
+                srcset="./img/my_photo.jpg 1x, ./img/my_photo_2.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/my_photo_tab.jpg 1x, ./img/my_photo_tab_2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/my_photo_mob.jpg 1x, ./img/my_photo_mob_2.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img
+                class="my_photo"
+                src="./img/my_photo.jpg"
+                alt="My photo"
+                width="300"
+                height="300"
+              />
+            </picture>
+          </div>
         </div>
-      </div>
       </div>
     </header>
     <main>
-      <section class="about-me">
-        <div class="container summary-block">
-          <div class="summary">
-            <p class="main-details summary-text">
-              I am - talented and actived Junior Frontend Developer with a plethora basic skills. I am graduated of Go-IT school as Full Stack developer.
-            </p>
-            <p class="main-details summary-text">
-              I will happy to start my career in a comnpany with a focus on making web-sites developments easily accessible, completely responsive, and intuitive forusers. I dream that my projects bring joy and convenience to users.
-            </p>
-          </div>
-          <div class="projects">
-            <h3 class="data title-data">Projects</h3>
-            <ul class="descriptions list-projects">
-              <li class="project-link-list">
-                Team project "ICE-CREAM" (HTML, SASS, JS, Slick Slider, Parcel)
-                <p class="project-description">An adaptive website of ice cream shop, where user can find
-all information about products, order some of them or visit one of the cafes. Role: Developer. My tasks were creating of the section "About" and animation for section "Gallery".</p>                
-                <a
-                  class="project-link"
-                  href="https://oleh-semenenko.github.io/ten-go/"
-                >
-                  LINK</a
-                >
-              </li>
-              <li class="project-link-list">
-                Team project "FILMOTEKA" (HTML, SASS, JS, REST API, Parcel)
-                <p class="project-description">An adaptive website, which allows to find the most popular
-movies, add them to your own library. User also can watch
-trailer, read information about movie and find rating. Role:
-Developer. My tasks were creating of the header for both pages and button of returning to the top of page.</p>   
-                <a
-                  class="project-link"
-                  href="https://oleh-semenenko.github.io/filmoteka/"
-                >
-                  LINK</a
-                >
-               
-              </li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <h3 class="data title-data">Skills</h3>
-          <div class="my-skills">
-            <div class="details tech-skills">
-              <h3 class="data title-details">Tech Skills</h3>
-              <div class="tech-skills-box">
+      <section class="main-data">
+        <div class="container about-me">
+          <div class="data-details first">
+            <!-- CONTACTS -->
+            <div class="contacts-block">
+              <h3 class="data title-data">Contacts</h3>
+              <ul class="contacts-details">
+                <li class="my-details">
+                  <a class="contact-link" href="tel:+380973839192">
+                    <svg class="contact-icon" width="16" height="12">
+                      <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                    +380 97 383 91 92</a
+                  >
+                </li>
+                <li class="my-details">
+                  <a
+                    class="contact-link"
+                    href="mailto:gromova.olga.it@gmail.com"
+                  >
+                    <svg class="contact-icon" width="16" height="12">
+                      <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                    gromova.olga.it@gmail.com
+                  </a>
+                </li>
+                <li class="my-details">
+                  <a
+                    class="contact-link"
+                    href="viber://chat?number=+380973839192"
+                  >
+                    <svg class="contact-icon" width="16" height="12">
+                      <use href="./img/icons.svg#icon-viber-svgrepo-com"></use>
+                    </svg>
+                    Olga_NL (Viber)
+                  </a>
+                </li>
+                <li class="my-details">
+                  <a
+                    class="contact-link"
+                    href="http://www.linkedin.com/in/olga-gromova-0ba957290"
+                  >
+                    <svg class="contact-icon" width="16" height="12">
+                      <use
+                        href="./img/icons.svg#icon-iconmonstr-linkedin-1"
+                      ></use>
+                    </svg>
+                    www.linkedin.com/in/olga-gromova-0ba957290
+                  </a>
+                </li>
+                <li class="my-details">
+                  <a
+                    class="contact-link"
+                    href="https://github.com/Olga-Gromova"
+                  >
+                    <svg class="contact-icon" width="16" height="12">
+                      <use
+                        href="./img/icons.svg#icon-iconmonstr-github-1"
+                      ></use>
+                    </svg>
+                    https://github.com/Olga-Gromova
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- SKILLS    -->
+            <div class="tech-skills">
+              <h3 class="data title-data">Tech Skills</h3>
+              <div class="skills-box">
                 <ul class="descriptions tech-list-one">
-                <li class="skills-item">HTML5 / CSS3</li>
-                <li class="skills-item">GIT</li>
-                <li class="skills-item">JavaScript</li>
-                <li class="skills-item">React.js</li>
-                <li class="skills-item">Node.js</li>
-              </ul>
-              <ul class="descriptions tech-list-two">
-                <li class="skills-item">SASS</li>
-                <li class="skills-item">WebPack</li>
-                <li class="skills-item">Parcel</li>
-                <li class="skills-item">Redux</li>
-                <li class="skills-item">REST API</li>
-              </ul>
+                  <li class="skills-item">HTML5 / CSS3</li>
+                  <li class="skills-item">GIT</li>
+                  <li class="skills-item">JavaScript</li>
+                  <li class="skills-item">React.js</li>
+                  <li class="skills-item">Node.js</li>
+                </ul>
+                <ul class="descriptions tech-list-two">
+                  <li class="skills-item">SASS</li>
+                  <li class="skills-item">WebPack</li>
+                  <li class="skills-item">Parcel</li>
+                  <li class="skills-item">Redux</li>
+                  <li class="skills-item">REST API</li>
+                </ul>
               </div>
-              
             </div>
-            <div class="details soft-skills">
-              <h3 class="data title-details">Soft Skills</h3>
+            <div class="soft-skills">
+              <h3 class="data title-data">Soft Skills</h3>
+              <div class="skills-box">
+                <ul class="descriptions soft-list-one">
+                  <li class="skills-item">GTD</li>
+                  <li class="skills-item">Teamwork</li>
+                </ul>
+                <ul class="descriptions soft-list-two">
+                  <li class="skills-item">Scrum</li>
+                  <li class="skills-item">Agile</li>
+                </ul>
+              </div>
+            </div>
+            <!-- LANGUAGES -->
+            <div class="lang-block">
+              <h3 class="data title-data">Languages</h3>
+              <ul class="descriptions lang-list">
+                <li class="lang-item">Ukrainian: Native</li>
+                <li class="lang-item">English: Pre-Intermediate</li>
+                <li class="lang-item">Russan: Advanced</li>
+              </ul>
+            </div>
+            <!-- COURSES -->
+            <div class="courses-block">
+              <h3 class="data title-data">Relevant Courses</h3>
+              <p class="period">2022-2023</p>
+              <h4 class="data-name">Full Stack Developer</h4>
               <ul class="descriptions">
-                <li class="skills-item">Scrum</li>
-                <li class="skills-item">Agile</li>
-                <li class="skills-item">GTD</li>
-                <li class="skills-item">Teamwork</li>
+                <li class="courses-item">IT School GoIT, Ukraine</li>
+              </ul>
+            </div>
+          </div>
+          <div class="data-details second">
+            <!-- PROJECTS -->
+            <div class="projects">
+              <h3 class="data title-data">Projects</h3>
+              <ul class="descriptions list-projects">
+                <li class="project-link-list">
+                  <a
+                    class="project-link"
+                    href="https://oleh-semenenko.github.io/ten-go/"
+                  >
+                    Team project "ICE-CREAM" (HTML, SASS, JS, Slick Slider,
+                    Parcel)</a
+                  >
+                  <p class="project-description">
+                    An adaptive website of ice cream shop, where user can find
+                    all information about products, order some of them or visit
+                    one of the cafes. Role: Developer. My tasks were creating of
+                    the section "About" and animation for section "Gallery".
+                  </p>
+                </li>
+                <li class="project-link-list">
+                  <a
+                    class="project-link"
+                    href="https://oleh-semenenko.github.io/filmoteka/"
+                    >Team project "FILMOTEKA" (HTML, SASS, JS, REST API,
+                    Parcel)</a
+                  >
+                  <p class="project-description">
+                    An adaptive website, which allows to find the most popular
+                    movies, add them to your own library. User also can watch
+                    trailer, read information about movie and find rating. Role:
+                    Developer. My tasks were creating of the header for both
+                    pages and button of returning to the top of page.
+                  </p>
+                </li>
+                <!-- <li class="project-link-list">
+                  <a
+                    class="project-link"
+                    href="https://oleh-semenenko.github.io/filmoteka/"
+                    >Team project "FILMOTEKA" (HTML, SASS, JS, REST API,
+                    Parcel)</a
+                  >
+                  <p class="project-description">
+                    An adaptive website, which allows to find the most popular
+                    movies, add them to your own library. User also can watch
+                    trailer, read information about movie and find rating. Role:
+                    Developer. My tasks were creating of the header for both
+                    pages and button of returning to the top of page.
+                  </p>
+                </li> -->
+              </ul>
+            </div>
+            <!-- EXPERIENCE -->
+            <div class="experience-block">
+              <h3 class="data title-data">Work Experience</h3>
+              <p class="main-details">August 1998 - March 2023</p>
+              <h4 class="data-name">Finance manager</h4>
+              <p class="data-name">Pharmaceuticals company, Ukraine</p>
+              <ul class="descriptions work-list">
+                <li class="work-item">
+                  Team work with financial and accouting departmets
+                </li>
+                <li class="work-item">
+                  New software systems for automatization of business processes
+                  - monitoring, evaluation, advice, choice and implementation
+                </li>
+                <li class="work-item">
+                  Create of the managment reporting based on Excel
+                </li>
+                <li>
+                  Create of the budgets for the business, including evaluating
+                  the needs of each department
+                </li>
+                <li class="work-item">
+                  Control of the spending by departments and compare with
+                  budgets
+                </li>
+                <li class="work-item">
+                  Analysis & advise - the investment plans, the financial risks,
+                  the financial health of company
+                </li>
+                <li class="work-item">
+                  Deal with partners in different jurisdictions
+                </li>
+              </ul>
+            </div>
+            <!-- EDUCATION -->
+            <div class="education-block">
+              <h3 class="data title-data">Education</h3>
+              <ul class="descriptions">
+                <li>
+                  <h3 class="data-name">Master's degree in Finance</h3>
+                  <p class="main-details">
+                    KROK University of Economics and Law, Kiev, Ukraine
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- ADDITIONAL DETAILS -->
+            <div class="add-block">
+              <h3 class="data title-data">Additional information</h3>
+              <ul class="descriptions add-list">
+                <li>Driver license, category B</li>
+                <li>Hobbies: painting, cooking, travelling by car</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="container">
-          <h3 class="data title-data">Languages</h3>
-          <ul class="descriptions lang-list">
-            <li class="lang-item">Russian: First language, Proficient</li>
-            <li class="lang-item">Ukrainian: Advanced</li>
-            <li class="lang-item">English: Pre-Intermediate</li>
-          </ul>
-        </div>
-        <div class="container">
-          <h3 class="data title-data">Relevant Courses</h3>
-          <h4 class="">Full Stack Developer</h4>
-          <ul class="descriptions">            
-            <li class="courses-item">GoIT, Ukraine</li>
-          </ul>          
-        </div>
-        <div class="container">
-          <h3 class="data title-data">Work Experience</h3>
-          <p class="main-details">August 1998 - March 2023</p>
-          <h4 class="data-name">Finance manager</h4>
-          <p class="data-name">Pharmaceuticals company, Ukraine</p>
-          <ul class="descriptions work-list">
-            <li class="work-item">Team work with financial and accouting departmets</li>
-            <li class="work-item">
-              New software systems for automatization of business processes -
-              monitoring, evaluation, advice, choice and implementation
-            </li>
-            <li class="work-item">Create of the managment reporting based on Excel</li>
-            <li>
-              Create of the budgets for the business, including evaluating the
-              needs of each department
-            </li>
-            <li class="work-item">
-              Control of the spending by departments and compare with budgets
-            </li>
-            <li class="work-item">
-              Analysis & advise - the investment plans, the financial risks, the
-              financial health of company
-            </li>
-            <li class="work-item">Deal with partners in different jurisdictions</li>
-          </ul>
-        </div>
-        <!-- EDUCATION -->
-        <div class="container">
-          <h3 class="data title-data">Education</h3>
-          <ul class="descriptions">
-            <li>
-              <h3 class="data-name">Master's degree in Finance</h3>
-              <p class="main-details">KROK University of Economics and Law, Kiev, Ukraine</p>
-            </li>
-          </ul>
-        </div>
-        <div class="container">
-          <h3 class="data title-data">Additional information</h3>
-          <ul class="descriptions add-list">
-            <li>Driver license, category B</li>
-            <li>Hobbies: painting, cooking, travelling by car</li>
-          </ul>
-        </div>
-      </div>
       </section>
     </main>
+    <!-- FOOTER: CONTACTS, DECLARATION -->
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
-          <div class="footer-contacts">              
-          <ul class="footer-details">
-            <li class="footer-list">
-              <a class="contact-link" href="tel:+380973839192">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-                +380 97 383 91 92</a
-              >
-            </li>
-            <li class="footer-list">
-              <a class="contact-link" href="mailto:gromova.o.77@gmail.com">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-                gromova.olga.it@gmail.com
-              </a>
-            </li>
-            <li class="footer-list">
-              <a class="contact-link" href="viber://chat?number=+380973839192">
-                <svg class="contact-icon" width="16" height="12">
-                  <use href="./img/icons.svg#icon-viber-svgrepo-com"></use>
-                </svg>
-                Olga_NL (Viber)
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="my-vision">
-            <p class="main-details summary-text">
-              Having overcome the next frontier,<br />I do not feel admiration
-              and expier,<br />And only in my heart is a big desire<br />Need to
-              start new phase in of my life.
+          <!-- FOOTER CONTACTS -->
+          <div class="footer-contacts">
+            <ul class="footer-details">
+              <li class="footer-list">
+                <a class="contact-link" href="tel:+380973839192">
+                  <svg class="contact-icon" width="16" height="12">
+                    <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+                  +380 97 383 91 92</a
+                >
+              </li>
+              <li class="footer-list">
+                <a class="contact-link" href="mailto:gromova.olga.it@gmail.com">
+                  <svg class="contact-icon" width="16" height="12">
+                    <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+                  gromova.olga.it@gmail.com
+                </a>
+              </li>
+              <li class="footer-list">
+                <a
+                  class="contact-link"
+                  href="viber://chat?number=+380973839192"
+                >
+                  <svg class="contact-icon" width="16" height="12">
+                    <use href="./img/icons.svg#icon-viber-svgrepo-com"></use>
+                  </svg>
+                  Olga_NL (Viber)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- DECLARATION -->
+          <div class="declatation">
+            <h4 class="title-declaration">DECLARATION</h4>
+            <p class="text-declaration">
+              I consent to the processing of my personal data by the recruitment
+              process for the position I have applied for. I hereby give consent
+              for my personal data included in the application to be processed
+              for the purposes of future recruitment processes for the company I
+              have applied to.
             </p>
           </div>
-        </div>
-                  
         </div>
       </div>
     </footer>
