@@ -467,27 +467,21 @@ a {
         }
     }
 
+
+
     .projects-name {
         text-align: start;
     }
 
-    .project-box {
-        margin-left: 30px;
-    }
-
-    @media screen and (min-width: 768px) {
-        .project-box {
-            margin-left: auto;
-        }
-    }
 
     .list-projects {
         margin-bottom: 5px;
-        list-style: disc;
+
         list-style: inside;
         font-weight: 400;
         font-size: 12px;
         list-style: none;
+
 
     }
 
@@ -525,7 +519,7 @@ a {
 
 
     .project-description {
-        /* margin-left: 25px; */
+
         margin-top: 5px;
         margin-bottom: 5px;
 
@@ -542,7 +536,6 @@ a {
 
 @media screen and (min-width: 768px) {
     .project-description {
-
 
         font-size: 14px;
 
@@ -596,13 +589,18 @@ a {
 
 
 .project-link::before {
-
     content: "\1F517";
     margin-right: 10px;
-
-
-
+    margin-left: 30px;
 }
+
+@media screen and (min-width: 768px) {
+    .project-link::before {
+        margin-left: 0px;
+    }
+}
+
+
 
 .data-name,
 .courses-item {
