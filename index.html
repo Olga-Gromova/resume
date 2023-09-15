@@ -25,59 +25,12 @@
     <!-- HEADER: NAME, PHOTO, SUMMARY -->
     <header class="header">
       <div class="container header-data">
-        <div class="summary-block">
-          <div class="summary">
-            <p class="main-details summary-text">
-              I am - talented and actived Junior Frontend Developer with a
-              plethora basic skills. I am graduated of Go-IT school as Full
-              Stack developer.
-            </p>
-            <p class="main-details summary-text">
-              I will happy to start my career in a comnpany with a focus on
-              making web-sites developments easily accessible, completely
-              responsive, and intuitive forusers. I dream that my projects bring
-              joy and convenience to users.
-            </p>
-          </div>
-          <div class="my-data">
-            <h1 class="my-name">Olga Gromova</h1>
-            <h3 class="my-title">Frond-End Developer</h3>
-          </div>
-        </div>
-        <div class="photo-block">
-          <div class="photo-thumb">
-            <picture class="photo-thumb">
-              <source
-                srcset="./img/my_photo.jpg 1x, ./img/my_photo_2.jpg 2x"
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset="./img/my_photo_tab.jpg 1x, ./img/my_photo_tab_2.jpg 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="./img/my_photo_mob.jpg 1x, ./img/my_photo_mob_2.jpg 2x"
-                media="(min-width: 320px)"
-              />
-              <img
-                class="my_photo"
-                src="./img/my_photo.jpg"
-                alt="My photo"
-                width="300"
-                height="300"
-              />
-            </picture>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="main-data">
-        <div class="container about-me">
-          <div class="data-details first">
-            <!-- CONTACTS -->
-            <div class="contacts-block">
-              <h3 class="data title-data">Contacts</h3>
+        <!-- CONTACTS & SUMMARY -->
+        <div class="test">
+          <div class="summary-block">
+            <!-- CONTACTS SECOND-->
+            <div class="contacts-block contact-first">
+              <h3 class="data title-data first-contact">Contacts</h3>
               <ul class="contacts-details">
                 <li class="my-details">
                   <a class="contact-link" href="tel:+380973839192">
@@ -136,6 +89,143 @@
                   </a>
                 </li>
               </ul>
+            </div>
+            <!-- SUMMARY -->
+            <div class="summary summary-first">
+              <p class="main-details summary-text">
+                I am - talented and actived Junior Frontend Developer with a
+                plethora basic skills. I am graduated of Go-IT school as Full
+                Stack developer.
+              </p>
+              <p class="main-details summary-text">
+                I will happy to start my career in a comnpany with a focus on
+                making web-sites developments easily accessible, completely
+                responsive, and intuitive forusers. I dream that my projects
+                bring joy and convenience to users.
+              </p>
+            </div>
+          </div>
+          <!-- NAME & POSITION -->
+          <div class="my-data">
+            <h1 class="my-name">Olga Gromova</h1>
+            <h3 class="my-title">Frond-End Developer</h3>
+          </div>
+        </div>
+        <!-- PHOTO -->
+        <div class="photo-block">
+          <div class="photo-thumb">
+            <picture class="photo-thumb">
+              <source
+                srcset="./img/my_photo.jpg 1x, ./img/my_photo_2.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./img/my_photo_tab.jpg 1x, ./img/my_photo_tab_2.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/my_photo_mob.jpg 1x, ./img/my_photo_mob_2.jpg 2x"
+                media="(min-width: 320px)"
+              />
+              <img
+                class="my_photo"
+                src="./img/my_photo.jpg"
+                alt="My photo"
+                width="300"
+                height="300"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-data">
+        <div class="container about-me">
+          <div class="data-details first">
+            <!-- CONTACTS SECOND-->
+            <div class="contacts-box">
+              <div class="contacts-block contact-second">
+                <h3 class="data title-data">Contacts</h3>
+                <ul class="contacts-details">
+                  <li class="my-details">
+                    <a class="contact-link" href="tel:+380973839192">
+                      <svg class="contact-icon" width="16" height="12">
+                        <use
+                          href="./img/icons.svg#icon-phone-black-18dp-1"
+                        ></use>
+                      </svg>
+                      +380 97 383 91 92</a
+                    >
+                  </li>
+                  <li class="my-details">
+                    <a
+                      class="contact-link"
+                      href="mailto:gromova.olga.it@gmail.com"
+                    >
+                      <svg class="contact-icon" width="16" height="12">
+                        <use
+                          href="./img/icons.svg#icon-email-black-18dp-1"
+                        ></use>
+                      </svg>
+                      gromova.olga.it@gmail.com
+                    </a>
+                  </li>
+                  <li class="my-details">
+                    <a
+                      class="contact-link"
+                      href="viber://chat?number=+380973839192"
+                    >
+                      <svg class="contact-icon" width="16" height="12">
+                        <use
+                          href="./img/icons.svg#icon-viber-svgrepo-com"
+                        ></use>
+                      </svg>
+                      Olga_NL (Viber)
+                    </a>
+                  </li>
+                  <li class="my-details">
+                    <a
+                      class="contact-link"
+                      href="http://www.linkedin.com/in/olga-gromova-0ba957290"
+                    >
+                      <svg class="contact-icon" width="16" height="12">
+                        <use
+                          href="./img/icons.svg#icon-iconmonstr-linkedin-1"
+                        ></use>
+                      </svg>
+                      www.linkedin.com/in/olga-gromova-0ba957290
+                    </a>
+                  </li>
+                  <li class="my-details">
+                    <a
+                      class="contact-link"
+                      href="https://github.com/Olga-Gromova"
+                    >
+                      <svg class="contact-icon" width="16" height="12">
+                        <use
+                          href="./img/icons.svg#icon-iconmonstr-github-1"
+                        ></use>
+                      </svg>
+                      https://github.com/Olga-Gromova
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- SUMMARY -->
+              <div class="summary summary-second">
+                <p class="main-details summary-text">
+                  I am - talented and actived Junior Frontend Developer with a
+                  plethora basic skills. I am graduated of Go-IT school as Full
+                  Stack developer.
+                </p>
+                <p class="main-details summary-text">
+                  I will happy to start my career in a comnpany with a focus on
+                  making web-sites developments easily accessible, completely
+                  responsive, and intuitive forusers. I dream that my projects
+                  bring joy and convenience to users.
+                </p>
+              </div>
             </div>
             <!-- SKILLS    -->
             <div class="tech-skills">
