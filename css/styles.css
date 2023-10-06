@@ -281,18 +281,7 @@ a {
     }
 }
 
-/* 
-.main-data {
-    background-image: url(../img/5026563.jpg);
-    background-color: var(--accent-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-} */
 
-/* .first {
-    padding-right: 15px;
-    } */
 
 @media screen and (min-width: 768px) {
     .second {
